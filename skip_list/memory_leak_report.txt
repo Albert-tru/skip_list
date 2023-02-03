@@ -1,0 +1,928 @@
+Visual Leak Detector Version 2.5.1 installed.
+    Outputting the report to the debugger and to E:\All_Project\OOP\skip_list\skip_list\memory_leak_report.txt
+WARNING: Visual Leak Detector detected memory leaks!
+---------- Block 74 at 0x00000000C3F8A220: 80 bytes ----------
+  Leak Hash: 0x7CA2C23C, Count: 1, Total 80 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (263): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><std::tuple<int const &>,std::tuple<>,0>() + 0x32 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (267): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><int const &>() + 0x53 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (683): skip_list.exe!std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::construct<std::pair<int const ,Skiplist>,std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple<> >()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xtree (806): skip_list.exe!std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > ><std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (182): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::_Try_emplace<int const &>() + 0x77 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (323): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::operator[]() + 0x1A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x16 bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 F0 BF    FF FF FF FF    CD CD CD CD     ........ ........
+    B0 51 FA C3    32 02 00 00    E0 53 FA C3    32 02 00 00     .Q..2... .S..2...
+    F0 53 FA C3    32 02 00 00    F0 53 FA C3    32 02 00 00     .S..2... .S..2...
+    10 4C FA C3    32 02 00 00    00 4D FA C3    32 02 00 00     .L..2... .M..2...
+    10 4D FA C3    32 02 00 00    10 4D FA C3    32 02 00 00     .M..2... .M..2...
+
+
+---------- Block 105 at 0x00000000C3F8A7A0: 80 bytes ----------
+  Leak Hash: 0x566BC654, Count: 1, Total 80 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 00 00    03 00 00 00    CD CD CD CD     ........ ........
+    D0 77 F9 C3    32 02 00 00    00 6D FA C3    32 02 00 00     .w..2... .m..2...
+    08 6D FA C3    32 02 00 00    08 6D FA C3    32 02 00 00     .m..2... .m..2...
+    A0 72 FA C3    32 02 00 00    30 6F FA C3    32 02 00 00     .r..2... 0o..2...
+    38 6F FA C3    32 02 00 00    38 6F FA C3    32 02 00 00     8o..2... 8o..2...
+
+
+---------- Block 82 at 0x00000000C3F8AA70: 80 bytes ----------
+  Leak Hash: 0x566BC654, Count: 1, Total 80 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    65 CD FD 41    01 00 00 00    CD CD CD CD     ....e..A ........
+    B0 4C FA C3    32 02 00 00    50 48 FA C3    32 02 00 00     .L..2... PH..2...
+    60 48 FA C3    32 02 00 00    60 48 FA C3    32 02 00 00     `H..2... `H..2...
+    40 53 FA C3    32 02 00 00    A0 48 FA C3    32 02 00 00     @S..2... .H..2...
+    B0 48 FA C3    32 02 00 00    B0 48 FA C3    32 02 00 00     .H..2... .H..2...
+
+
+---------- Block 2 at 0x00000000C3F8AD40: 80 bytes ----------
+  Leak Hash: 0x7DA519EC, Count: 1, Total 80 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (110): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 F0 BF    FF FF FF FF    CD CD CD CD     ........ ........
+    B0 74 F9 C3    32 02 00 00    30 72 F9 C3    32 02 00 00     .t..2... 0r..2...
+    38 72 F9 C3    32 02 00 00    38 72 F9 C3    32 02 00 00     8r..2... 8r..2...
+    50 75 F9 C3    32 02 00 00    A0 75 F9 C3    32 02 00 00     Pu..2... .u..2...
+    A8 75 F9 C3    32 02 00 00    A8 75 F9 C3    32 02 00 00     .u..2... .u..2...
+
+
+---------- Block 63 at 0x00000000C3F8CE60: 80 bytes ----------
+  Leak Hash: 0x566BC654, Count: 1, Total 80 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 D0    88 C3 00 42    00 00 00 00    CD CD CD CD     .......B ........
+    D0 54 FA C3    32 02 00 00    90 49 FA C3    32 02 00 00     .T..2... .I..2...
+    A0 49 FA C3    32 02 00 00    A0 49 FA C3    32 02 00 00     .I..2... .I..2...
+    B0 56 FA C3    32 02 00 00    80 4A FA C3    32 02 00 00     .V..2... .J..2...
+    90 4A FA C3    32 02 00 00    90 4A FA C3    32 02 00 00     .J..2... .J..2...
+
+
+---------- Block 55 at 0x00000000C3F8D480: 80 bytes ----------
+  Leak Hash: 0x7CA2C23C, Count: 1, Total 80 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (263): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><std::tuple<int const &>,std::tuple<>,0>() + 0x32 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (267): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><int const &>() + 0x53 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (683): skip_list.exe!std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::construct<std::pair<int const ,Skiplist>,std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple<> >()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xtree (806): skip_list.exe!std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > ><std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (182): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::_Try_emplace<int const &>() + 0x77 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (323): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::operator[]() + 0x1A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x16 bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 F0 BF    FF FF FF FF    CD CD CD CD     ........ ........
+    70 55 FA C3    32 02 00 00    20 4B FA C3    32 02 00 00     pU..2... .K..2...
+    30 4B FA C3    32 02 00 00    30 4B FA C3    32 02 00 00     0K..2... 0K..2...
+    10 56 FA C3    32 02 00 00    70 4B FA C3    32 02 00 00     .V..2... pK..2...
+    80 4B FA C3    32 02 00 00    80 4B FA C3    32 02 00 00     .K..2... .K..2...
+
+
+---------- Block 95 at 0x00000000C3F90700: 80 bytes ----------
+  Leak Hash: 0x566BC654, Count: 1, Total 80 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0xA bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 00 00    02 00 00 00    CD CD CD CD     ........ ........
+    20 55 FA C3    32 02 00 00    60 4C FA C3    32 02 00 00     .U..2... `L..2...
+    68 4C FA C3    32 02 00 00    68 4C FA C3    32 02 00 00     hL..2... hL..2...
+    60 56 FA C3    32 02 00 00    F0 48 FA C3    32 02 00 00     `V..2... .H..2...
+    F8 48 FA C3    32 02 00 00    F8 48 FA C3    32 02 00 00     .H..2... .H..2...
+
+
+---------- Block 4 at 0x00000000C3F97230: 8 bytes ----------
+  Leak Hash: 0x1BC173E6, Count: 1, Total 8 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0x3B bytes
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (110): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 00 00                                   ........ ........
+
+
+---------- Block 3 at 0x00000000C3F974B0: 16 bytes ----------
+  Leak Hash: 0x1A9034B0, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0x3B bytes
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (110): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    50 AD F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     P...2... ........
+
+
+---------- Block 5 at 0x00000000C3F97550: 16 bytes ----------
+  Leak Hash: 0x384FA2C3, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0x3B bytes
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (110): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    70 AD F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     p...2... ........
+
+
+---------- Block 6 at 0x00000000C3F975A0: 8 bytes ----------
+  Leak Hash: 0xFA622100, Count: 1, Total 8 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0x3B bytes
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (110): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 00 00                                   ........ ........
+
+
+---------- Block 106 at 0x00000000C3F977D0: 16 bytes ----------
+  Leak Hash: 0x10E8F9D9, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    B0 A7 F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     ....2... ........
+
+
+---------- Block 84 at 0x00000000C3FA4850: 16 bytes ----------
+  Leak Hash: 0xB34FECC8, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 00 00    00 00 00 00    00 00 00 00     ........ ........
+
+
+---------- Block 86 at 0x00000000C3FA48A0: 16 bytes ----------
+  Leak Hash: 0x10C9B953, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 07 F9 C3    32 02 00 00    20 A2 F8 C3    32 02 00 00     ....2... ....2...
+
+
+---------- Block 99 at 0x00000000C3FA48F0: 8 bytes ----------
+  Leak Hash: 0x6F7C3376, Count: 1, Total 8 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    20 A2 F8 C3    32 02 00 00                                   ....2... ........
+
+
+---------- Block 65 at 0x00000000C3FA4990: 16 bytes ----------
+  Leak Hash: 0xB34FECC8, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 00 00    00 00 00 00    00 00 00 00     ........ ........
+
+
+---------- Block 67 at 0x00000000C3FA4A80: 16 bytes ----------
+  Leak Hash: 0x10C9B953, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    A0 A7 F8 C3    32 02 00 00    80 D4 F8 C3    32 02 00 00     ....2... ....2...
+
+
+---------- Block 68 at 0x00000000C3FA4B20: 16 bytes ----------
+  Leak Hash: 0x99AFFF88, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1228): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Resize_reallocate<std::_Value_init_tag>() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1263): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Resize<std::_Value_init_tag>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1278): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::resize()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (156): skip_list.exe!Skiplist::add()
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    A0 A7 F8 C3    32 02 00 00    60 CE F8 C3    32 02 00 00     ....2... `...2...
+
+
+---------- Block 69 at 0x00000000C3FA4B70: 16 bytes ----------
+  Leak Hash: 0xDC10D36E, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1228): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Resize_reallocate<std::_Value_init_tag>() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1263): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Resize<std::_Value_init_tag>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1278): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::resize()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (157): skip_list.exe!Skiplist::add()
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 00 00    00 00 00 00    00 00 00 00     ........ ........
+
+
+---------- Block 77 at 0x00000000C3FA4C10: 16 bytes ----------
+  Leak Hash: 0x07305B51, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0x3B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (263): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><std::tuple<int const &>,std::tuple<>,0>() + 0x32 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (267): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><int const &>() + 0x53 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (683): skip_list.exe!std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::construct<std::pair<int const ,Skiplist>,std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple<> >()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xtree (806): skip_list.exe!std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > ><std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (182): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::_Try_emplace<int const &>() + 0x77 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (323): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::operator[]() + 0x1A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x16 bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    50 A2 F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     P...2... ........
+
+
+---------- Block 97 at 0x00000000C3FA4C60: 8 bytes ----------
+  Leak Hash: 0xCCFA66ED, Count: 1, Total 8 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    70 AA F8 C3    32 02 00 00                                   p...2... ........
+
+
+---------- Block 83 at 0x00000000C3FA4CB0: 16 bytes ----------
+  Leak Hash: 0x10E8F9D9, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    80 AA F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     ....2... ........
+
+
+---------- Block 88 at 0x00000000C3FA4D00: 16 bytes ----------
+  Leak Hash: 0xDC10D36E, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1228): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Resize_reallocate<std::_Value_init_tag>() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1263): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Resize<std::_Value_init_tag>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1278): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::resize()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (157): skip_list.exe!Skiplist::add()
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 00 00 00    00 00 00 00    00 00 00 00    00 00 00 00     ........ ........
+
+
+---------- Block 75 at 0x00000000C3FA51B0: 16 bytes ----------
+  Leak Hash: 0xE69309B7, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0x3B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (263): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><std::tuple<int const &>,std::tuple<>,0>() + 0x32 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (267): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><int const &>() + 0x53 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (683): skip_list.exe!std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::construct<std::pair<int const ,Skiplist>,std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple<> >()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xtree (806): skip_list.exe!std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > ><std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (182): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::_Try_emplace<int const &>() + 0x77 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (323): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::operator[]() + 0x1A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x16 bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    30 A2 F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     0...2... ........
+
+
+---------- Block 85 at 0x00000000C3FA5340: 16 bytes ----------
+  Leak Hash: 0x0D2E047B, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    A0 AA F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     ....2... ........
+
+
+---------- Block 87 at 0x00000000C3FA53E0: 16 bytes ----------
+  Leak Hash: 0x99AFFF88, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1228): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Resize_reallocate<std::_Value_init_tag>() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1263): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Resize<std::_Value_init_tag>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1278): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::resize()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (156): skip_list.exe!Skiplist::add()
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    00 07 F9 C3    32 02 00 00    70 AA F8 C3    32 02 00 00     ....2... p...2...
+
+
+---------- Block 64 at 0x00000000C3FA54D0: 16 bytes ----------
+  Leak Hash: 0x10E8F9D9, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    70 CE F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     p...2... ........
+
+
+---------- Block 96 at 0x00000000C3FA5520: 16 bytes ----------
+  Leak Hash: 0x10E8F9D9, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    10 07 F9 C3    32 02 00 00    00 00 00 00    00 00 00 00     ....2... ........
+
+
+---------- Block 56 at 0x00000000C3FA5570: 16 bytes ----------
+  Leak Hash: 0xE69309B7, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0x3B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (263): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><std::tuple<int const &>,std::tuple<>,0>() + 0x32 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (267): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><int const &>() + 0x53 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (683): skip_list.exe!std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::construct<std::pair<int const ,Skiplist>,std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple<> >()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xtree (806): skip_list.exe!std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > ><std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (182): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::_Try_emplace<int const &>() + 0x77 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (323): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::operator[]() + 0x1A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x16 bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    90 D4 F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     ....2... ........
+
+
+---------- Block 58 at 0x00000000C3FA5610: 16 bytes ----------
+  Leak Hash: 0x07305B51, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (64): skip_list.exe!Skiplist::Skiplist() + 0x3B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (263): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><std::tuple<int const &>,std::tuple<>,0>() + 0x32 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\utility (267): skip_list.exe!std::pair<int const ,Skiplist>::pair<int const ,Skiplist><int const &>() + 0x53 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (683): skip_list.exe!std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::construct<std::pair<int const ,Skiplist>,std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple<> >()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xtree (806): skip_list.exe!std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > >::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<int const ,Skiplist>,void *> > ><std::piecewise_construct_t const &,std::tuple<int const &>,std::tuple()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (182): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::_Try_emplace<int const &>() + 0x77 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\map (323): skip_list.exe!std::map<int,Skiplist,std::less<int>,std::allocator<std::pair<int const ,Skiplist> > >::operator[]() + 0x1A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x16 bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    B0 D4 F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     ....2... ........
+
+
+---------- Block 98 at 0x00000000C3FA5660: 16 bytes ----------
+  Leak Hash: 0x0D2E047B, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    30 07 F9 C3    32 02 00 00    00 00 00 00    00 00 00 00     0...2... ........
+
+
+---------- Block 66 at 0x00000000C3FA56B0: 16 bytes ----------
+  Leak Hash: 0x0D2E047B, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    90 CE F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     ....2... ........
+
+
+---------- Block 107 at 0x00000000C3FA6D00: 8 bytes ----------
+  Leak Hash: 0xCCFA66ED, Count: 1, Total 8 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0x6F bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    60 CE F8 C3    32 02 00 00                                   `...2... ........
+
+
+---------- Block 109 at 0x00000000C3FA6F30: 8 bytes ----------
+  Leak Hash: 0x6F7C3376, Count: 1, Total 8 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<SkiplistNode *>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1698): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_raw() + 0x1B bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (1720): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Buy_nonzero()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (479): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    80 D4 F8 C3    32 02 00 00                                   ....2... ........
+
+
+---------- Block 108 at 0x00000000C3FA72A0: 16 bytes ----------
+  Leak Hash: 0x0D2E047B, Count: 1, Total 16 bytes
+  Call Stack (TID 22924):
+    ucrtbased.dll!malloc()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp (35): skip_list.exe!operator new() + 0xA bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (80): skip_list.exe!std::_Default_allocate_traits::_Allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (235): skip_list.exe!std::_Allocate<16,std::_Default_allocate_traits,0>() + 0xC bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (802): skip_list.exe!std::allocator<std::_Container_proxy>::allocate()
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\xmemory (1283): skip_list.exe!std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (476): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::_Construct_n_copies_of_ty<SkiplistNode *>() + 0x11 bytes
+    D:\BigApp\VS2019community\vs\VC\Tools\MSVC\14.29.30133\include\vector (497): skip_list.exe!std::vector<SkiplistNode *,std::allocator<SkiplistNode *> >::vector<SkiplistNode *,std::allocator<SkiplistNode *> >()
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (18): skip_list.exe!SkiplistNode::SkiplistNode() + 0xBC bytes
+    E:\All_Project\OOP\skip_list\skip_list\Skiplist.h (152): skip_list.exe!Skiplist::add() + 0x3A bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (161): skip_list.exe!Delaunay_skiplist::Init() + 0x2D bytes
+    E:\All_Project\OOP\skip_list\skip_list\Delaunay_skiplist.h (622): skip_list.exe!Delaunay_skiplist::Triangulation()
+    E:\All_Project\OOP\skip_list\skip_list\main.cpp (120): skip_list.exe!main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): skip_list.exe!invoke_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): skip_list.exe!__scrt_common_main_seh() + 0x5 bytes
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): skip_list.exe!__scrt_common_main()
+    D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): skip_list.exe!mainCRTStartup()
+    KERNEL32.DLL!BaseThreadInitThunk() + 0x10 bytes
+    ntdll.dll!RtlUserThreadStart() + 0x2B bytes
+  Data:
+    D0 A7 F8 C3    32 02 00 00    00 00 00 00    00 00 00 00     ....2... ........
+
+
+Visual Leak Detector detected 35 memory leaks (2780 bytes).
+Largest number used: 18960 bytes.
+Total allocations: 28312 bytes.
+Visual Leak Detector is now exiting.
